@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Random Chalenge Generator</title>
+  </head>
+  <body>
+    <h1>Random Challenge Generator <br />Prototype</h1>
+
+    <h2 id="challenge-output" style="color: orangered">
+      The Challenge Shows here
+    </h2>
+
+    <div class="form">
+      <div class="setting-container">
+        <label for="">Add a level</label>
+        <input id="level" type="text" placeholder="Level" value="12"/>
+      </div>
+
+      <div class="setting-container">
+        <label for="">Choose Challenge Type</label>
+        <select id="challenge-types" name="type">
+          <option value="all">All</option>
+          <option value="time">Time</option>
+          <option value="quantity">Quantity</option>
+        </select>
+      </div>
+    </div>
+    <button onclick="generate()">Generate Challenge</button>
+
+    <span>
+      <p>
+        this works by taking the level of the player, chooses a random topic
+        based on the skills they have already finished, and give them a random
+        challenge.
+      </p>
+      <p>
+        we can use the actuall level of the skill to give them a random
+        challenge based on a range that we give for each skill level (like 10-20
+        push ups for fitness1 and 30-60 push ups for fitness2)
+      </p>
+    </span>
+
+    <script src="RCG.js"></script>
+  </body>
+</html>
