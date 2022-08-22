@@ -2,6 +2,16 @@ const level = document.getElementById("level");
 const challengeType = document.getElementById("challenge-types");
 const output = document.getElementById("challenge-output");
 
+// TODO Create a Better List
+// or convert them into objects like the one below
+
+const object = {
+  name: "push-ups",
+  quantityType1: "reps",
+  quantityType2: "sets",
+  formula: function(){}
+};
+
 const skillList = [
   // Quantity
   [
