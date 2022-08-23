@@ -1,3 +1,13 @@
+/* TODO Uniform List:
+ * 1- DONT use prompt list. its better to have it seperate for good sentence quality until better solutions
+ * 2- TOO MUCH STUFF imo. make it less
+ * 3- see if you can make a generator for it
+ * 4- Better leveling & Measuring systems
+*/
+
+
+
+
 const promptList = {
   // UNIT: how we quantify that challenge
   // STARTER: how the sentence of the challenge starts

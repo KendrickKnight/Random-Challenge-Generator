@@ -9,8 +9,6 @@ for (const prop in promptList) {
   challengeType.appendChild(element);
 }
 
-// function getRandomInt(max) {}
-
 function getRandomArbitrary(min, max) {
   if (min === null) {
     return Math.floor(Math.random() * max);
@@ -19,7 +17,12 @@ function getRandomArbitrary(min, max) {
   }
 }
 
-// TODO Actually use the formula you dimwit! xD
+/* TODO Proper Generate function
+* 1- Formula usage
+* 2- Proper Sentence generation
+* 3- Turning these into TS
+* 4- Importing it to the app (after fixing and making the page in app)
+*/
 
 function generate() {
   if (challengeType.value.toLowerCase() === "all") {
@@ -30,34 +33,3 @@ function generate() {
   }
 }
 
-function generate1() {
-  // ALL
-  if (challengeType.value.toLowerCase() === "all") {
-    randomtype = skillLists[getRandomInt(skillLists.length)];
-    randomPrompt = randomtype[getRandomInt(randomtype.length)];
-
-    amount = getRandomArbitrary(level.value / 2, level.value * 2);
-
-    output.textContent = `do ${amount} of ${randomPrompt}`;
-  }
-  //Time
-  else if (challengeType.value.toLowerCase() === "time") {
-    randomtype = skillLists[1];
-    randomPrompt = randomtype[getRandomInt(randomtype.length)];
-
-    amount = getRandomArbitrary(level.value / 2, level.value * 2);
-
-    output.textContent = `do ${amount} of ${randomPrompt}`;
-  }
-  //Quantity
-  else {
-    randomtype = skillLists[0];
-    randomPrompt = randomtype[getRandomInt(randomtype.length)];
-
-    amount = getRandomArbitrary(level.value / 2, level.value * 2);
-
-    output.textContent = `do ${amount} of ${randomPrompt}`;
-  }
-
-  // output.innerHTML = `${challengeType.value}`
-}
